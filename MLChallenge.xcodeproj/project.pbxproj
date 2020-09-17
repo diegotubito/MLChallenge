@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		11E941102513B3EF00C4D3AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9410F2513B3EF00C4D3AA /* AppDelegate.swift */; };
-		11E941122513B3EF00C4D3AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E941112513B3EF00C4D3AA /* SceneDelegate.swift */; };
 		11E941142513B3EF00C4D3AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E941132513B3EF00C4D3AA /* ViewController.swift */; };
 		11E941172513B3EF00C4D3AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E941152513B3EF00C4D3AA /* Main.storyboard */; };
 		11E941192513B3F000C4D3AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E941182513B3F000C4D3AA /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		11E9410C2513B3EF00C4D3AA /* MLChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E9410F2513B3EF00C4D3AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11E941112513B3EF00C4D3AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11E941132513B3EF00C4D3AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11E941162513B3EF00C4D3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11E941182513B3F000C4D3AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,12 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				11E9410F2513B3EF00C4D3AA /* AppDelegate.swift */,
-				11E941112513B3EF00C4D3AA /* SceneDelegate.swift */,
 				11E941132513B3EF00C4D3AA /* ViewController.swift */,
-				11E941152513B3EF00C4D3AA /* Main.storyboard */,
-				11E941182513B3F000C4D3AA /* Assets.xcassets */,
-				11E9411A2513B3F000C4D3AA /* LaunchScreen.storyboard */,
-				11E9411D2513B3F000C4D3AA /* Info.plist */,
+				11E941462513B58700C4D3AA /* Common */,
+				11E941452513B57C00C4D3AA /* ReusableViews */,
+				11E941472513B58F00C4D3AA /* Pages */,
+				11E941492513B5B800C4D3AA /* Resources */,
+				11E941482513B5B000C4D3AA /* Storyboard */,
 			);
 			path = MLChallenge;
 			sourceTree = "<group>";
@@ -126,6 +124,45 @@
 				11E941332513B3F000C4D3AA /* Info.plist */,
 			);
 			path = MLChallengeUITests;
+			sourceTree = "<group>";
+		};
+		11E941452513B57C00C4D3AA /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		11E941462513B58700C4D3AA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		11E941472513B58F00C4D3AA /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		11E941482513B5B000C4D3AA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				11E941152513B3EF00C4D3AA /* Main.storyboard */,
+				11E9411A2513B3F000C4D3AA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		11E941492513B5B800C4D3AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11E9411D2513B3F000C4D3AA /* Info.plist */,
+				11E941182513B3F000C4D3AA /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +297,6 @@
 			files = (
 				11E941142513B3EF00C4D3AA /* ViewController.swift in Sources */,
 				11E941102513B3EF00C4D3AA /* AppDelegate.swift in Sources */,
-				11E941122513B3EF00C4D3AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +474,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2BEC8V882;
-				INFOPLIST_FILE = MLChallenge/Info.plist;
+				INFOPLIST_FILE = MLChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2BEC8V882;
-				INFOPLIST_FILE = MLChallenge/Info.plist;
+				INFOPLIST_FILE = MLChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
