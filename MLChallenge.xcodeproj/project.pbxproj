@@ -14,6 +14,8 @@
 		11E9411C2513B3F000C4D3AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E9411A2513B3F000C4D3AA /* LaunchScreen.storyboard */; };
 		11E941272513B3F000C4D3AA /* MLChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E941262513B3F000C4D3AA /* MLChallengeTests.swift */; };
 		11E941322513B3F000C4D3AA /* MLChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E941312513B3F000C4D3AA /* MLChallengeUITests.swift */; };
+		11E9414E2513B8A400C4D3AA /* ServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9414D2513B8A400C4D3AA /* ServiceTest.swift */; };
+		11E941572513B8E100C4D3AA /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E941562513B8E100C4D3AA /* ServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		11E9412D2513B3F000C4D3AA /* MLChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E941312513B3F000C4D3AA /* MLChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLChallengeUITests.swift; sourceTree = "<group>"; };
 		11E941332513B3F000C4D3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E9414D2513B8A400C4D3AA /* ServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTest.swift; sourceTree = "<group>"; };
+		11E941562513B8E100C4D3AA /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				11E941312513B3F000C4D3AA /* MLChallengeUITests.swift */,
+				11E9414D2513B8A400C4D3AA /* ServiceTest.swift */,
 				11E941332513B3F000C4D3AA /* Info.plist */,
 			);
 			path = MLChallengeUITests;
@@ -136,6 +141,7 @@
 		11E941462513B58700C4D3AA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				11E941552513B8C900C4D3AA /* Service */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -163,6 +169,14 @@
 				11E941182513B3F000C4D3AA /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		11E941552513B8C900C4D3AA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				11E941562513B8E100C4D3AA /* ServiceManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +311,7 @@
 			files = (
 				11E941142513B3EF00C4D3AA /* ViewController.swift in Sources */,
 				11E941102513B3EF00C4D3AA /* AppDelegate.swift in Sources */,
+				11E941572513B8E100C4D3AA /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E941272513B3F000C4D3AA /* MLChallengeTests.swift in Sources */,
+				11E9414E2513B8A400C4D3AA /* ServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
