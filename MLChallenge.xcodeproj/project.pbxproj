@@ -68,6 +68,7 @@
 		11DA1AAA25141D1F006F58E4 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		11DA1AAF25141D28006F58E4 /* DetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelProtocol.swift; sourceTree = "<group>"; };
 		11DA1AB425141D39006F58E4 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		11DA1ABF25142D9D006F58E4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		11E9410C2513B3EF00C4D3AA /* MLChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E9410F2513B3EF00C4D3AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E941162513B3EF00C4D3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -199,6 +200,7 @@
 		11E941032513B3EF00C4D3AA = {
 			isa = PBXGroup;
 			children = (
+				11DA1ABF25142D9D006F58E4 /* README.md */,
 				11E9410E2513B3EF00C4D3AA /* MLChallenge */,
 				11E941252513B3F000C4D3AA /* MLChallengeTests */,
 				11E941302513B3F000C4D3AA /* MLChallengeUITests */,
