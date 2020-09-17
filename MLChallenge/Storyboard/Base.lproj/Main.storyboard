@@ -11,7 +11,7 @@
         <!--Búsqueda-->
         <scene sceneID="ByY-pm-rfV">
             <objects>
-                <viewController id="IG0-bq-ek4" customClass="SearchViewController" customModule="MLSearchTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IG0-bq-ek4" customClass="SearchViewController" customModule="MLChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BaC-oX-mTP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,6 +42,7 @@
                     <connections>
                         <outlet property="loadingIndicator" destination="k76-29-nrw" id="533-D0-RTn"/>
                         <outlet property="searchBar" destination="P6R-Mj-TZ2" id="RH4-5u-9i6"/>
+                        <segue destination="qYm-be-GL1" kind="show" identifier="segue_product_list_vc" id="SyG-1k-5ru"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ns6-8e-jeC" sceneMemberID="firstResponder"/>
@@ -65,6 +66,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r54-Qx-ycL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="137.94642857142856"/>
+        </scene>
+        <!--Listado-->
+        <scene sceneID="kvr-t1-5kG">
+            <objects>
+                <viewController id="qYm-be-GL1" customClass="ProductListViewController" customModule="MLSearchTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U96-dF-GMN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uXO-ba-IdI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Listado" id="TXS-3d-PFT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aaB-bY-sn1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2826" y="138"/>
         </scene>
     </scenes>
     <resources>

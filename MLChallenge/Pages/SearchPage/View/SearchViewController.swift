@@ -21,6 +21,9 @@ class SearchViewController : UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super .prepare(for: segue, sender: sender)
         
+        if let destination = segue.destination as? ProductListViewController, let items = sender as? [ProductItem] {
+            destination.viewModel = ProductListViewModel(withView: destination, items: items)
+        }
     }
 }
 
