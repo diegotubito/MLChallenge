@@ -37,7 +37,11 @@ class ProductListViewController : UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super .prepare(for: segue, sender: sender)
         
-       
+        if let vc = segue.destination as? DetailViewController {
+            if let item = sender as? ProductItem {
+                vc.viewModel = DetailViewModel(withView: vc, selectedItem: item)
+            }
+        }
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -55,7 +59,6 @@ class ProductListViewController : UIViewController {
         coordinator.animate(alongsideTransition: animationHandler, completion: completionHandler)
    }
 }
-
 
 extension ProductListViewController : ProductListViewProtocol {
     func showList() {
